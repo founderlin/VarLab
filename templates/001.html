@@ -1,0 +1,46 @@
+{% extends "base_navbar.html" %}
+{% block content %}
+    <hr>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-1 text-center">VarLab</h1>
+            <p class="lead text-left">Dear visitors, this is the laboratory for variation, where a model can generate
+                its variants. This online platform is established by Mr. Fangzheng Lin,
+                developed and maintained by the research group form the Institute of Construction Informatics
+                (TU Dresden, Germany)
+            </p>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <a href="/002" class="col-lg-4">
+                    <div class="card border-danger text-body h-100">
+                        <div class="card-body">
+                            <h1 class="display-4">IFC File</h1>
+                            <p class="card-text">Industry Foundation Classes (IFC) are the open and neutral data
+                                format for openBIM.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <div class="col-lg-4">
+                    <div class="card border-info text-body h-100">
+                        <div class="card-body h-100">
+                            <h1 class="display-4">Teddy File</h1>
+                            <p class="card-text">SOFiSTiK</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-success text-body h-100">
+                        <div class="card-body">
+                            <h1 class="display-4">INP File</h1>
+                            <p class="card-text">ATENA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="my-5">
+    </div>
+{% endblock %}

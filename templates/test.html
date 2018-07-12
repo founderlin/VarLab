@@ -1,0 +1,34 @@
+{% extends "base_navbar.html" %}
+{% block content %}
+    <hr>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4 text-center">Test Page</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <form id="form1" method="POST">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <input class="form-control form-control-lg" type="text" id="inputLarge" name="input1">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input class="form-control form-control-lg" type="text" id="inputLarge" name="input2">
+                            </div>
+                            <input type="submit" class="input-group-text">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-8">
+                    <div class="card border-success mb-3 h-100">
+                        <p class="card-text">{{ PLUS }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="my-5">
+    </div>
+{% endblock %}

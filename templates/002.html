@@ -1,0 +1,37 @@
+{% extends "base_navbar.html" %}
+{% block content %}
+    <hr>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4 text-center">IFC File</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <form id="form1" method="post" action="/002" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="file" name="myfile" class="form-control-file" id="File1" aria-describedby="fileHelp">
+                            {% if not J_COL %}
+                                <small id="fileHelp" class="form-text text-muted lead"><strong>Please submit a file.</strong></small>
+                            {% elif J_COL==1 %}
+                                <small id="fileHelp" class="form-text text-success lead"><strong>Submit succeed!</strong></small>
+                            {% elif J_COL==2 %}
+                                <small id="fileHelp" class="form-text text-danger lead"><strong>Submit failed!</strong></small>
+                            {% endif %}
+                            <br>
+                            <input type="submit" class="input-group-text">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-8">
+                    <div class="card border-success mb-3 h-100">
+                        <div class="card-body">
+                            <p class="card-text">empty</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5">
+    </div>
+{% endblock %}
